@@ -6,8 +6,6 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.pd.composite.treeNumbers.TreeNumbers;
-
 public class TreeNumbersTest {
     private TreeNumbers root;
 

@@ -1,9 +1,15 @@
 package treeNumber;
 
-public class TreeNumbers {
+public abstract class TreeNumbers {
 
-    public TreeNumbers() {
-        // TODO Auto-generated constructor stub
-    }
+    public abstract void add(TreeNumbers nodo);
+    
+    public abstract void remove (TreeNumbers nodo);
+    
+    public abstract int numberofNodes ();
+    
+    public abstract int sum();
+    
+    public abstract int higher();
 
 }
