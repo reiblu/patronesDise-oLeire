@@ -2,8 +2,8 @@ package expresion;
 
 public class Dividir extends GestorExpresion {
 
-    public Dividir(Expresion exp1, Expresion epx2) {
-        // TODO Auto-generated constructor stub
+    public Dividir(Expresion exp1, Expresion exp2) {
+        super(exp1, exp2);
     }
 
     @Override

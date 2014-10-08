@@ -3,7 +3,7 @@ package expresion;
 public class Restar extends GestorExpresion {
 
     public Restar(Expresion exp1, Expresion exp2) {
-        // TODO Auto-generated constructor stub
+        super(exp1, exp2);
     }
 
     @Override

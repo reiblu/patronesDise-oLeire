@@ -2,14 +2,8 @@ package expresion;
 
 public class Sumar extends GestorExpresion {
 
-    private Expresion exp1;
-
-    private Expresion exp2;
-
     public Sumar(Expresion exp1, Expresion exp2) {
-
-       
-        
+        super(exp1, exp2);
     }
 
     @Override
