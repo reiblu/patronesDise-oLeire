@@ -1,39 +1,36 @@
 package treeNumber;
 
 public class LeafNode extends TreeNumbers {
+    
+    private int numero;
 
     public LeafNode() {
-        // TODO Auto-generated constructor stub
+       this.numero = numero;
     }
 
     @Override
     public void add(TreeNumbers nodo) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public void remove(TreeNumbers nodo) {
-        // TODO Auto-generated method stub
         
     }
 
     @Override
     public int numberofNodes() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 1;
     }
 
     @Override
     public int sum() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.numero;
     }
 
     @Override
     public int higher() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.numero;
     }
 
 }

@@ -1,17 +1,33 @@
 package treeNumber;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CompositeNode extends TreeNumbers {
+
+    private String name;
+
+    private List<TreeNumbers> lista;
+
+    public CompositeNode() {
+        this.name = name;
+        this.lista = new ArrayList<TreeNumbers>();
+    }
 
     @Override
     public void add(TreeNumbers nodo) {
-        // TODO Auto-generated method stub
-        
+        if (nodo != null) {
+            lista.add(nodo);
+        }
+
     }
 
     @Override
     public void remove(TreeNumbers nodo) {
-        // TODO Auto-generated method stub
-        
+        if (nodo != null) {
+            lista.remove(nodo);
+        }
+
     }
 
     @Override
@@ -22,7 +38,8 @@ public class CompositeNode extends TreeNumbers {
 
     @Override
     public int sum() {
-        // TODO Auto-generated method stub
+        int resultado = 0;
+        
         return 0;
     }
 
@@ -31,7 +48,5 @@ public class CompositeNode extends TreeNumbers {
         // TODO Auto-generated method stub
         return 0;
     }
-
-    
 
 }
