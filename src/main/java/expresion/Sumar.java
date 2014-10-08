@@ -1,9 +1,27 @@
 package expresion;
 
-public class Sumar extends Expresion {
+public class Sumar extends GestorExpresion {
 
-    public Sumar(Expresion exp1, Expresion exp12) {
-        // TODO Auto-generated constructor stub
+    private Expresion exp1;
+
+    private Expresion exp2;
+
+    public Sumar(Expresion exp1, Expresion exp2) {
+
+       
+        
+    }
+
+    @Override
+    public int operar() {
+
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
 }

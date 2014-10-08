@@ -2,8 +2,22 @@ package expresion;
 
 public class Numero extends Expresion {
 
-    public Numero(int i) {
-        // TODO Auto-generated constructor stub
+    private int numero;
+
+    public Numero(int numero) {
+        this.numero = numero;
+    }
+
+    @Override
+    public int operar() {
+
+        return this.numero;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
 }
