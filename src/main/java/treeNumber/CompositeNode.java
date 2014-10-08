@@ -32,15 +32,16 @@ public class CompositeNode extends TreeNumbers {
 
     @Override
     public int numberofNodes() {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public int sum() {
         int resultado = 0;
-        
-        return 0;
+        for (TreeNumbers treeNumbers : lista) {
+            resultado += treeNumbers.sum();
+        }
+        return resultado;
     }
 
     @Override
