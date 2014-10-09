@@ -1,6 +1,6 @@
 package conexion;
 
-public class Preparado extends Estado {
+public class Preparado extends Estados {
 
     @Override
     public void abrir(Conexion conection) {
