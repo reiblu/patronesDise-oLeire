@@ -4,37 +4,37 @@ public class Esperando extends State {
 
     @Override
     public void abrir(Conexion conection) {
-        // TODO Auto-generated method stub
-        
+        throw new UnsupportedOperationException("Acción no permitida... "); 
     }
 
     @Override
     public void cerrar(Conexion conection) {
-        // TODO Auto-generated method stub
-        
+        throw new UnsupportedOperationException("Acción no permitida... ");  
     }
 
     @Override
     public void parar(Conexion conection) {
-        // TODO Auto-generated method stub
-        
+        throw new UnsupportedOperationException("Acción no permitida... ");  
     }
 
     @Override
     public void iniciar(Conexion conection) {
-        // TODO Auto-generated method stub
-        
+        throw new UnsupportedOperationException("Acción no permitida... "); 
     }
 
     @Override
     public void enviar(Conexion conection, String mensaje) {
-        // TODO Auto-generated method stub
-        
+        throw new UnsupportedOperationException("Acción no permitida... ");  
     }
 
     @Override
     public void recibir(Conexion conection, int respuesta) {
-        // TODO Auto-generated method stub
+        conection.getLink().recibir(respuesta);
+        if(respuesta == 0){
+            conection.setEstado(new Preparado());
+        }else{
+            conection.setEstado(new Cerrado());
+        }
         
     }
 

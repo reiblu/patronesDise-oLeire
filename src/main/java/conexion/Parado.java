@@ -36,7 +36,7 @@ public class Parado extends State {
 
     @Override
     public Estado getEstado() {
-        return Estado.PREPARADO;
+        return Estado.PARADO;
     }
 
 }

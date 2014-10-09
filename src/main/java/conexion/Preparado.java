@@ -14,7 +14,7 @@ public class Preparado extends State {
 
     @Override
     public void parar(Conexion conection) {
-        throw new UnsupportedOperationException("Acción no permitida... ");
+        conection.setEstado(new Parado());
     }
 
     @Override
@@ -24,7 +24,8 @@ public class Preparado extends State {
 
     @Override
     public void enviar(Conexion conection, String mensaje) {
-        conection.setEstado(new Esperando());;
+        conection.getLink().enviar(mensaje);
+        conection.setEstado(new Esperando());
 
     }
 
