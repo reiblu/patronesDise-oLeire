@@ -14,7 +14,7 @@ public class Parado extends State {
 
     @Override
     public void parar(Conexion conection) {
-        conection.setEstado(new Parado());
+        
     }
 
     @Override

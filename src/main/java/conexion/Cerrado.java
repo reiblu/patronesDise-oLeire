@@ -4,7 +4,7 @@ public class Cerrado extends State{
 
     @Override
     public void abrir(Conexion conection) {
-        // TODO Auto-generated method stub
+        conection.setEstado(new Preparado());
         
     }
 
