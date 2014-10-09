@@ -2,13 +2,13 @@ package naturalNumbers;
 
 public abstract class NaturalNumbers {
     
-    private String numerotexto;
     private int value;
+    protected String[] textValue;
 
-    public NaturalNumbers(String numerotexto, int numero) {
+    public NaturalNumbers(int numero, String[] textValue) {
         super();
         this.value = numero;
-        this.numerotexto = numerotexto;
+        this.textValue = new String[6];
     }
     
     public abstract String getTextValue();

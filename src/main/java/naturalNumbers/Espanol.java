@@ -1,11 +1,11 @@
 package naturalNumbers;
 
 public class Espanol extends NaturalNumbers {
-    
-    private String[] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
 
-    public Espanol(String numerotexto, int numero) {
-        super(numerotexto,numero);
+    public Espanol(int numero) {
+        super(numero);
+        String [] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
+       
     }
 
     @Override

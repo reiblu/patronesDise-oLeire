@@ -4,7 +4,7 @@ public class EspanolCreator extends NaturalNumbersCreator {
 
     @Override
     public NaturalNumbers createNaturalNumbers() {
-        return new Espanol("tres",3);
+        return new Espanol(3);
     }
 
 }
