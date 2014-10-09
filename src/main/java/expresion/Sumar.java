@@ -9,7 +9,7 @@ public class Sumar extends GestorExpresion {
     @Override
     public int operar() {
 
-        return 0;
+        return exp1.operar() + exp2.operar();
     }
 
     @Override
