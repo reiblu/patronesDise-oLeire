@@ -1,6 +1,7 @@
 package conexion;
 
 public class Parado extends State {
+    
 
     @Override
     public void abrir(Conexion conection) {
@@ -20,7 +21,7 @@ public class Parado extends State {
     @Override
     public void iniciar(Conexion conection) {
         conection.setEstado(new Preparado());
-
+        
     }
 
     @Override

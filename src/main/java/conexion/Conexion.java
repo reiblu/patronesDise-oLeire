@@ -2,9 +2,11 @@ package conexion;
 
 public class Conexion {
 
-    private State estado;
+    private State state;
 
     private Link link;
+
+    private Estado estado;
 
     public Conexion(LinkMock link) {
         this.setEstado(new Cerrado());
@@ -16,36 +18,36 @@ public class Conexion {
         return this.link;
     }
 
-    protected void setEstado(State estado) {
-        this.estado = estado;
+    protected void setEstado(State state) {
+        this.state = state;
     }
 
-    public State getEstado() {
+    public Estado getEstado() {
         return this.estado;
     }
 
     public void abrir() {
-        estado.abrir(this);
+        state.abrir(this);
     }
 
     public void cerrar() {
-        estado.cerrar(this);
+        state.cerrar(this);
     }
 
     public void parar() {
-        estado.parar(this);
+        state.parar(this);
     }
 
     public void iniciar() {
-        estado.iniciar(this);
+        state.iniciar(this);
     }
 
     public void enviar(String msg) {
-        estado.enviar(this, msg);
+        state.enviar(this, msg);
     }
 
     public void recibir(int respuesta) {
-        estado.recibir(this, respuesta);
+        state.recibir(this, respuesta);
     }
 
 }
