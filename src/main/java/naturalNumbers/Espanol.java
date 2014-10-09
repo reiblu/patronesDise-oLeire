@@ -7,8 +7,10 @@ public class Espanol extends NaturalNumbers {
     public Espanol(String numerotexto, int numero) {
         super(numerotexto,numero);
     }
-    
-    public String getValue(){
+
+    @Override
+    public String getTextValue() {
+        // TODO Auto-generated method stub
         return null;
     }
 

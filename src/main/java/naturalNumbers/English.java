@@ -8,4 +8,10 @@ public class English extends NaturalNumbers {
         super(numerotexto,numero);
     }
 
+    @Override
+    public String getTextValue() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }
