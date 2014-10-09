@@ -38,4 +38,9 @@ public class Esperando extends State {
         
     }
 
+    @Override
+    public Estado getEstado() {
+        return Estado.ESPERANDO;
+    }
+
 }

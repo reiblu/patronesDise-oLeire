@@ -6,8 +6,6 @@ public class Conexion {
 
     private Link link;
 
-    private Estado estado;
-
     public Conexion(LinkMock link) {
         this.setEstado(new Cerrado());
         assert link != null;
@@ -23,7 +21,7 @@ public class Conexion {
     }
 
     public Estado getEstado() {
-        return this.estado;
+        return this.state.getEstado();
     }
 
     public void abrir() {

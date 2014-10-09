@@ -4,7 +4,7 @@ public class Preparado extends State {
 
     @Override
     public void abrir(Conexion conection) {
-        conection.setEstado(new Preparado());
+        
     }
 
     @Override
@@ -19,20 +19,24 @@ public class Preparado extends State {
 
     @Override
     public void iniciar(Conexion conection) {
-        conection.setEstado(new Preparado());
 
     }
 
     @Override
     public void enviar(Conexion conection, String mensaje) {
-        // TODO Auto-generated method stub
+        conection.setEstado(new Esperando());;
 
     }
 
     @Override
     public void recibir(Conexion conection, int respuesta) {
-        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Acción no permitida... ");
 
+    }
+
+    @Override
+    public Estado getEstado() {
+        return Estado.PREPARADO;
     }
 
 }

@@ -34,4 +34,9 @@ public class Parado extends State {
         throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
+    @Override
+    public Estado getEstado() {
+        return Estado.PREPARADO;
+    }
+
 }
