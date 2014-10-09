@@ -1,5 +1,6 @@
 package conexion;
 
+
 public abstract class State {
 
     public abstract void abrir(Conexion conection);
