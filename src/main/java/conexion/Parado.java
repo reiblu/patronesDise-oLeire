@@ -1,6 +1,6 @@
 package conexion;
 
-public class Parado extends Estados {
+public class Parado extends State {
 
     @Override
     public void abrir(Conexion conection) {

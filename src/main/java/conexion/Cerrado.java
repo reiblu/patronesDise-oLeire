@@ -1,6 +1,6 @@
 package conexion;
 
-public class Cerrado extends Estados{
+public class Cerrado extends State{
 
     @Override
     public void abrir(Conexion conection) {
