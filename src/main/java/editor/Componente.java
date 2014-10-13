@@ -8,4 +8,6 @@ public abstract class Componente {
 
     public abstract void remove(Componente h);
     
+    public abstract boolean isComposite();
+    
 }
