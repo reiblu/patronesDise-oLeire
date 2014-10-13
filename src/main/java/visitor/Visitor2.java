@@ -1,27 +1,27 @@
 package visitor;
 
 public class Visitor2 extends Visitor {
+    
+    private int[] cosas = new int[2];
 
     @Override
     public void visitElementA(ElementA e) {
-        System.out.println("Visitador 2 --> elemento: " + e.getAttributeA());
+        this.cosas[0]++;
         
     }
 
     @Override
     public void visitElementB(ElementB e) {
-        System.out.println("Visitador 2 --> elemento: " + e.getAttributeB());
+        this.cosas[1]++;
         
     }
 
-    public Object getAs() {
-        // TODO Auto-generated method stub
-        return null;
+    public int getAs() {
+        return this.cosas[0];
     }
 
-    public Object getBs() {
-        // TODO Auto-generated method stub
-        return null;
+    public int getBs() {
+        return this.cosas[1];
     }
 
 }
