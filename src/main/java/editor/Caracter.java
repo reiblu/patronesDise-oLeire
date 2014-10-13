@@ -2,20 +2,23 @@ package editor;
 
 public class Caracter extends Componente {
 
+    private char caracter;
+
     public Caracter(char c) {
-        // TODO Auto-generated constructor stub
+        this.caracter = c;
     }
 
     @Override
     public void add(Componente h) {
-        // TODO Auto-generated method stub
-        
+
     }
 
     @Override
     public String dibujar(boolean b) {
-        // TODO Auto-generated method stub
-        return null;
+        if (b) {
+            return Character.toString(caracter).toUpperCase();
+        } else {
+            return Character.toString(caracter).toLowerCase();
+        }
     }
-
 }
