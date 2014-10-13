@@ -3,7 +3,7 @@ package naturalNumbers;
 public class Espanol extends NaturalNumbers {
 
     public Espanol(int numero) {
-        super(numero);
+        super(numero, textValue);
         String [] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
        
     }
