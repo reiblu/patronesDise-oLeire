@@ -27,4 +27,10 @@ public class Caracter extends Componente {
         // TODO Auto-generated method stub
         
     }
+
+    @Override
+    public boolean isComposite() {
+        // TODO Auto-generated method stub
+        return false;
+    }
 }
