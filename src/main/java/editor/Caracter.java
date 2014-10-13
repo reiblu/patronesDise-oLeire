@@ -21,4 +21,10 @@ public class Caracter extends Componente {
             return Character.toString(caracter).toLowerCase();
         }
     }
+
+    @Override
+    public void remove(Componente h) {
+        // TODO Auto-generated method stub
+        
+    }
 }

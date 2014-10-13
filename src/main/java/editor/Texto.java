@@ -14,4 +14,10 @@ public class Texto extends Composite {
         return null;
     }
 
+    @Override
+    public void remove(Componente h) {
+        // TODO Auto-generated method stub
+        
+    }
+
 }
