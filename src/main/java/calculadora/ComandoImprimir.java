@@ -1,20 +1,23 @@
 package calculadora;
 
-public class ComandoImprimir implements Comando {
+import upm.jbb.IO;
 
-    public ComandoImprimir(Calculadora calc) {
-        // TODO Auto-generated constructor stub
+public class ComandoImprimir implements Comando {
+    
+    private Calculadora calculadora;
+
+    public ComandoImprimir(Calculadora calculadora) {
+        this.calculadora = calculadora;
     }
 
     @Override
     public String name() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Imprimir";
     }
 
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
+        IO.out.println(this.calculadora.getTotal());
         
     }
 

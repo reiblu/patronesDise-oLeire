@@ -1,21 +1,25 @@
 package calculadora;
 
-public class ComandoRestar implements Comando {
+import upm.jbb.IO;
 
-    public ComandoRestar(Calculadora calc) {
-        // TODO Auto-generated constructor stub
+public class ComandoRestar implements Comando {
+    
+    private Calculadora calculadora;
+
+    public ComandoRestar(Calculadora calculadora) {
+        this.calculadora = calculadora;
     }
 
     @Override
     public String name() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Restar";
     }
 
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
-        
+        int resta = IO.in.readInt("resta");
+       this.calculadora.restar(resta);
+       
     }
 
 }

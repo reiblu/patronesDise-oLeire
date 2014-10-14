@@ -1,20 +1,22 @@
 package calculadora;
 
 public class ComandoIniciar implements Comando {
+    
+    private Calculadora calculadora;
 
-    public ComandoIniciar(Calculadora calc) {
-        // TODO Auto-generated constructor stub
+    public ComandoIniciar(Calculadora calculadora) {
+        this.calculadora = calculadora;
     }
 
     @Override
     public String name() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Iniciar";
     }
 
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
+        this.calculadora.iniciar();
+        
         
     }
 
