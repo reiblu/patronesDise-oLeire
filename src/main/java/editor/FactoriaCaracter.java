@@ -5,7 +5,12 @@ import java.util.Map;
 
 public class FactoriaCaracter {
     
+    private static FactoriaCaracter factoria;
     private final Map<Character,Caracter> caracteres = new HashMap<Character, Caracter>();
+    
+    private FactoriaCaracter(){
+        
+    }
     
     public Caracter get(char c){
         if (caracteres.containsKey(c)){
@@ -18,8 +23,10 @@ public class FactoriaCaracter {
     }
 
     public static FactoriaCaracter getFactoria() {
-        // TODO Auto-generated method stub
-        return null;
+        if(FactoriaCaracter.factoria==null){
+            FactoriaCaracter.factoria = new FactoriaCaracter();
+        }
+        return FactoriaCaracter.factoria;
     }
 
 }

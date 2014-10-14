@@ -11,10 +11,23 @@ public class Parrafo extends Composite {
         }
     }
 
+    @SuppressWarnings("null")
     @Override
-    public String dibujar(boolean b) {
-        // TODO Auto-generated method stub
-        return null;
+    public String dibujar(boolean mayuscula) {
+        String resultado = null;
+        if(!mayuscula){
+            resultado.concat((compuestos.get(0)).dibujar(true));
+            compuestos.remove(0);
+            for (Componente componente : compuestos) {
+                resultado.concat(componente.dibujar(false));
+            }
+        } else {
+            for (Componente componente : compuestos) {
+                resultado.concat(componente.dibujar(true));
+            }
+        }
+        resultado.concat("\n");
+        return resultado;
     }
 
     @Override
