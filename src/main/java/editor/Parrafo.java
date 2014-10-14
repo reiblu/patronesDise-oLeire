@@ -11,10 +11,9 @@ public class Parrafo extends Composite {
         }
     }
 
-    @SuppressWarnings("null")
     @Override
     public String dibujar(boolean mayuscula) {
-        String resultado = null;
+        String resultado = "";
         if(!mayuscula){
             resultado.concat((compuestos.get(0)).dibujar(true));
             compuestos.remove(0);
