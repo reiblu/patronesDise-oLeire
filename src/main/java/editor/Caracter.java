@@ -23,14 +23,7 @@ public class Caracter extends Componente {
     }
 
     @Override
-    public void remove(Componente h) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
     public boolean isComposite() {
-        // TODO Auto-generated method stub
         return false;
     }
 }
