@@ -1,5 +1,8 @@
 package editor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Parrafo extends Composite {
   
     @Override
@@ -13,11 +16,12 @@ public class Parrafo extends Composite {
 
     @Override
     public String dibujar(boolean mayuscula) {
+        List<Componente> compuestotemporal = new ArrayList<Componente>(compuestos);
         StringBuilder temporal = new StringBuilder();
         if(!mayuscula){
-            temporal.append((compuestos.get(0)).dibujar(true));
-            compuestos.remove(0);
-            for (Componente componente : compuestos) {
+            temporal.append((compuestotemporal.get(0)).dibujar(true));
+            compuestotemporal.remove(0);
+            for (Componente componente : compuestotemporal) {
                 temporal.append(componente.dibujar(false));
             }
         } else {
