@@ -2,12 +2,10 @@ package calculadora;
 
 import upm.jbb.IO;
 
-public class ComandoImprimir implements Comando {
-    
-    private Calculadora calculadora;
+public class ComandoImprimir extends GestorOperaciones {
 
     public ComandoImprimir(Calculadora calculadora) {
-        this.calculadora = calculadora;
+        super(calculadora);
     }
 
     @Override
@@ -17,7 +15,7 @@ public class ComandoImprimir implements Comando {
 
     @Override
     public void execute() {
-        IO.out.println(this.calculadora.getTotal());
+        IO.out.println(this.getCalculadora().getTotal());
         
     }
 

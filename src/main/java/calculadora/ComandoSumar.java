@@ -2,12 +2,10 @@ package calculadora;
 
 import upm.jbb.IO;
 
-public class ComandoSumar implements Comando {
-    
-    private Calculadora calculadora;
-    
-    public ComandoSumar(Calculadora calculadora){
-        this.calculadora = calculadora;
+public class ComandoSumar extends GestorOperaciones {
+
+    public ComandoSumar(Calculadora calculadora) {
+        super(calculadora);
     }
 
     public String name() {
@@ -17,7 +15,7 @@ public class ComandoSumar implements Comando {
     @Override
     public void execute() {
         int sumando = IO.in.readInt("sumando");
-        this.calculadora.sumar(sumando);
+        this.getCalculadora().sumar(sumando);
         
     }
 

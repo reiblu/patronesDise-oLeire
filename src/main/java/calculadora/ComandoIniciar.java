@@ -1,11 +1,9 @@
 package calculadora;
 
-public class ComandoIniciar implements Comando {
-    
-    private Calculadora calculadora;
+public class ComandoIniciar extends GestorOperaciones {
 
     public ComandoIniciar(Calculadora calculadora) {
-        this.calculadora = calculadora;
+        super(calculadora);
     }
 
     @Override
@@ -15,7 +13,7 @@ public class ComandoIniciar implements Comando {
 
     @Override
     public void execute() {
-        this.calculadora.iniciar();
+        this.getCalculadora().iniciar();
         
         
     }
