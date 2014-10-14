@@ -13,19 +13,20 @@ public class Parrafo extends Composite {
 
     @Override
     public String dibujar(boolean mayuscula) {
-        String resultado = "";
+        StringBuilder temporal = new StringBuilder();
         if(!mayuscula){
-            resultado.concat((compuestos.get(0)).dibujar(true));
+            temporal.append((compuestos.get(0)).dibujar(true));
             compuestos.remove(0);
             for (Componente componente : compuestos) {
-                resultado.concat(componente.dibujar(false));
+                temporal.append(componente.dibujar(false));
             }
         } else {
             for (Componente componente : compuestos) {
-                resultado.concat(componente.dibujar(true));
+                temporal.append((componente.dibujar(true)));
             }
         }
-        resultado.concat("\n");
+        temporal.append("\n");
+        String resultado = temporal.toString();
         return resultado;
     }
 
