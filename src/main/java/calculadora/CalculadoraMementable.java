@@ -9,7 +9,7 @@ public class CalculadoraMementable extends Calculadora implements Mementable <Me
 
     @Override
     public void restoreMemento(MementoCalculadora memento) {
-        
+        this.setTotal(memento.getValor());
         
     }
 

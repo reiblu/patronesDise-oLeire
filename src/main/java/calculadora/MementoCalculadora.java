@@ -1,9 +1,15 @@
 package calculadora;
 
 public class MementoCalculadora {
+    
+    private int valor;
 
     public MementoCalculadora(int total) {
-        // TODO Auto-generated constructor stub
+        this.valor=total;
+    }
+    
+    public int getValor(){
+        return valor;
     }
 
 }
