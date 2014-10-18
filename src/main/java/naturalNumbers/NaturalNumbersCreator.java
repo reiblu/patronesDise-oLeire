@@ -2,6 +2,6 @@ package naturalNumbers;
 
 public abstract class NaturalNumbersCreator {
 
-    public abstract NaturalNumbers createNaturalNumbers();
+    public abstract NaturalNumbers createNaturalNumbers(int numero);
 
 }

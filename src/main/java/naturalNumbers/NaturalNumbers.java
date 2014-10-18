@@ -3,12 +3,10 @@ package naturalNumbers;
 public abstract class NaturalNumbers {
     
     private int value;
-    protected String[] textValue;
 
-    public NaturalNumbers(int numero, String[] textValue) {
+    public NaturalNumbers(int numero) {
         super();
         this.value = numero;
-        this.textValue = new String[6];
     }
     
     public abstract String getTextValue();

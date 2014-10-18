@@ -9,8 +9,8 @@ public class NaturalNumbersManager {
         this.creador = creador;
     }
     
-    public void createNaturalNumbers(){
-        this.numero = this.creador. createNaturalNumbers();
+    public void createNaturalNumbers(int numero){
+        this.numero = this.creador. createNaturalNumbers(numero);
     }
     
     public NaturalNumbers getNaturalNumber(){

@@ -10,8 +10,7 @@ public class English extends NaturalNumbers {
 
     @Override
     public String getTextValue() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.textValue[this.getValue()];
     }
 
 }

@@ -1,17 +1,16 @@
 package naturalNumbers;
 
 public class Espanol extends NaturalNumbers {
+    
+    private String [] texValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
 
     public Espanol(int numero) {
-        super(numero, textValue);
-        String [] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
-       
+        super(numero);
     }
 
     @Override
     public String getTextValue() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.texValue[this.getValue()];
     }
 
 }
