@@ -1,5 +1,7 @@
 package calculadora;
 
+import upm.jbb.IO;
+
 public class ComandoDeshacer extends GestorOperaciones {
 
     public ComandoDeshacer(Calculadora calculadora) {
@@ -13,7 +15,9 @@ public class ComandoDeshacer extends GestorOperaciones {
 
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
+        CalculadoraMementable c = (CalculadoraMementable)this.getCalculadora();
+        MementoCalculadora memento = GestorMementos.getGestor().getMemento((String)IO.in.select(GestorMementos.getGestor().keys()));
+        c.restoreMemento(memento);
 
     }
 

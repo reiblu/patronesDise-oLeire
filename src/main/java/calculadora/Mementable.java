@@ -1,8 +1,8 @@
 package calculadora;
 
-public interface Mementable<T> {
-    T createMemento();
+public interface Mementable {
+    MementoCalculadora createMemento();
 
-    void restoreMemento(T memento);
+    void restoreMemento(MementoCalculadora memento);
 
 }

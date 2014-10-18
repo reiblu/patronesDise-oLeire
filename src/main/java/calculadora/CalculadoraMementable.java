@@ -1,7 +1,7 @@
 package calculadora;
 
-public class CalculadoraMementable extends Calculadora implements Mementable <MementoCalculadora> {
-
+public class CalculadoraMementable extends Calculadora implements Mementable {
+    
     @Override
     public MementoCalculadora createMemento() {
         return new MementoCalculadora(this.getTotal());

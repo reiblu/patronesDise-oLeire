@@ -1,5 +1,7 @@
 package calculadora;
 
+import upm.jbb.IO;
+
 public class ComandoGuardar extends GestorOperaciones {
 
     public ComandoGuardar(Calculadora calculadora) {
@@ -13,7 +15,10 @@ public class ComandoGuardar extends GestorOperaciones {
 
     @Override
     public void execute() {
-        this.getCalculadora();
+        CalculadoraMementable c = (CalculadoraMementable)this.getCalculadora();
+        MementoCalculadora memento = c.createMemento();
+        GestorMementos.getGestor().addMemento(IO.in.readString("Titulo nuevo memento: "), memento);
+
 
     }
 

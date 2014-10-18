@@ -3,14 +3,26 @@ package calculadora;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class GestorMementos<T> {
-    private SortedMap<String, T> lista = new TreeMap<String, T>();
+public class GestorMementos {
+    private SortedMap<String, MementoCalculadora> lista = new TreeMap<String, MementoCalculadora>();
+    private static GestorMementos gestor;
+    
+    private GestorMementos(){
+        
+    }
+    
+    public static GestorMementos getGestor() {
+        if(GestorMementos.gestor==null){
+            GestorMementos.gestor = new GestorMementos();
+        }
+        return GestorMementos.gestor;
+    }
 
-    public void addMemento(String key, T memento) {
+    public void addMemento(String key, MementoCalculadora memento) {
         this.lista.put(this.lista.size() + ":" + key, memento);
     }
 
-    public T getMemento(String key) {
+    public MementoCalculadora getMemento(String key) {
         return this.lista.get(key);
     }
 
